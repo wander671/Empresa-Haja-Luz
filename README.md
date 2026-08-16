@@ -34,6 +34,33 @@ cd haja-luz
 
 Depois é só dar duplo clique em `index.html`, ou abrir com a extensão **Live Server** no VS Code para recarregamento automático.
 
+## Guia rápido de manutenção
+
+Quer mudar algo? Veja onde mexer:
+
+| Quero mudar... | Onde editar |
+|---|---|
+| Telefone / WhatsApp | `index.html` — busque `(21) 99999-0000` (aparece 2x) |
+| E-mail | `index.html` — busque `contato@hajaluz.com.br` |
+| Título principal / texto do topo | `index.html` — dentro de `<section class="hero">` |
+| Adicionar ou remover um serviço | `index.html` — dentro de `<section id="servicos">`, copie ou apague um bloco `<div class="breaker">...</div>` inteiro |
+| Texto "Sobre a empresa" | `index.html` — dentro de `<section id="sobre">` |
+| Números (anos de atuação, instalações, etc.) | `index.html` — dentro de `<div class="stats">` |
+| Etapas do processo de atendimento | `index.html` — dentro de `<section id="processo">` |
+| Horário de atendimento | `index.html` — dentro de `<section id="contato">` |
+| Cores do site (tudo de uma vez) | `styles.css` — bloco `:root{ }` no topo do arquivo, cada cor tem comentário explicando o que controla |
+| Fontes | `styles.css` — busque `font-family` |
+
+Todos os pontos editáveis em `index.html` têm um comentário `<!-- EDITAR: ... -->` logo acima, para facilitar achar rápido.
+
+Depois de editar, salve e suba a alteração:
+```bash
+git add .
+git commit -m "descreva o que mudou"
+git push
+```
+O site atualiza sozinho em 1-2 minutos.
+
 ## Publicação
 
 O site está hospedado gratuitamente via **GitHub Pages**, publicado direto a partir da branch `main`.
