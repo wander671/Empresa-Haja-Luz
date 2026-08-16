@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haja Luz — Instalações e Manutenções Elétricas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<header>
+  <nav>
+    <div class="logo">
+      <svg class="bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+      Haja Luz
+    </div>
+    <div class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <a href="#contato" class="cta-btn">Pedir orçamento</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Atendimento 24h · Rio de Janeiro e região</div>
+      <h1>Instalação elétrica feita para <em>durar</em>, não só para funcionar.</h1>
+      <p>A Haja Luz cuida da parte elétrica de residências, comércios e indústrias — do quadro de força ao último ponto de tomada — com laudo técnico e garantia por escrito.</p>
+      <div class="hero-actions">
+        <a href="#contato" class="cta-btn">Solicitar orçamento</a>
+        <a href="#servicos" class="btn-outline">Ver serviços</a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="panel-label">
+          <span>QUADRO DE DISTRIBUIÇÃO</span>
+          <span>STATUS: ATIVO</span>
+        </div>
+        <svg id="circuit" viewBox="0 0 1000 220" xmlns="http://www.w3.org/2000/svg">
+          <path class="circuit-line" d="M20 40 H220 V110 H400" />
+          <path class="circuit-line active" d="M20 40 H220 V110 H400" />
+          <path class="circuit-line" d="M20 110 H150 V180 H400" />
+          <path class="circuit-line active" d="M20 110 H150 V180 H400" style="animation-delay:-1.2s" />
+          <path class="circuit-line" d="M400 110 H600 V40 H800" />
+          <path class="circuit-line active" d="M400 110 H600 V40 H800" style="animation-delay:-2.4s" />
+          <path class="circuit-line" d="M400 110 H980" />
+          <path class="circuit-line active" d="M400 110 H980" style="animation-delay:-3.6s" />
+          <path class="circuit-line" d="M400 180 H600 V220" />
+
+          <circle class="node on" cx="20" cy="40" r="6"/>
+          <circle class="node on" cx="20" cy="110" r="6"/>
+          <circle class="node on" cx="400" cy="110" r="8"/>
+          <circle class="node on" cx="800" cy="40" r="6"/>
+          <circle class="node on" cx="980" cy="110" r="6"/>
+          <circle class="node" cx="600" cy="180" r="6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <span><strong>+1.200</strong> instalações entregues</span>
+      <span><strong>15 anos</strong> de atuação</span>
+      <span><strong>NR-10</strong> equipe certificada</span>
+      <span><strong>Garantia</strong> por escrito em todo serviço</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Serviços</span>
+          <h2>Cada circuito, do jeito certo.</h2>
+        </div>
+        <p>Atendemos desde reparos pontuais até projetos elétricos completos, com material de qualidade e execução dentro da norma.</p>
+      </div>
+
+      <div class="breakers">
+        <div class="breaker">
+          <span class="code">01</span>
+          <div class="breaker-switch"></div>
+          <h3>Instalação residencial</h3>
+          <p>Projeto e execução completa de instalações elétricas em casas e apartamentos, novos ou em reforma.</p>
+        </div>
+        <div class="breaker">
+          <span class="code">02</span>
+          <div class="breaker-switch"></div>
+          <h3>Instalação comercial</h3>
+          <p>Lojas, escritórios e restaurantes — dimensionamento de carga e circuitos dedicados para cada uso.</p>
+        </div>
+        <div class="breaker">
+          <span class="code">03</span>
+          <div class="breaker-switch"></div>
+          <h3>Instalação industrial</h3>
+          <p>Quadros de força, comando de motores e painéis elétricos com acompanhamento técnico.</p>
+        </div>
+        <div class="breaker">
+          <span class="code">04</span>
+          <div class="breaker-switch"></div>
+          <h3>Padrão de entrada</h3>
+          <p>Regularização e instalação de padrão junto à concessionária, dentro das normas vigentes.</p>
+        </div>
+        <div class="breaker">
+          <span class="code">05</span>
+          <div class="breaker-switch"></div>
+          <h3>Quadros e disjuntores</h3>
+          <p>Troca e modernização de quadros de distribuição, disjuntores e proteção DR/DPS.</p>
+        </div>
+        <div class="breaker">
+          <span class="code">06</span>
+          <div class="breaker-switch"></div>
+          <h3>Emergência 24h</h3>
+          <p>Curto-circuito, queda de energia ou risco elétrico — atendimento rápido a qualquer hora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="sobre">
+    <div class="wrap about">
+      <div class="about-copy">
+        <span class="section-tag">Sobre a Haja Luz</span>
+        <h2 style="margin-bottom:22px; font-size: clamp(1.8rem, 3vw, 2.4rem);">Eletricistas que assinam embaixo do próprio serviço.</h2>
+        <p>Começamos atendendo bairros próximos e crescemos pela recomendação de quem já foi cliente. Hoje somos uma equipe registrada, com eletricistas certificados NR-10, atuando em toda a região.</p>
+        <p>Trabalhamos com orçamento fechado antes de começar, sem surpresa na conta final, e entregamos laudo técnico assinado em todo projeto acima de padrão de entrada.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="num mono">15</span><span class="lbl">Anos de atuação</span></div>
+        <div class="stat"><span class="num mono">1.200+</span><span class="lbl">Instalações entregues</span></div>
+        <div class="stat"><span class="num mono">24h</span><span class="lbl">Atendimento de emergência</span></div>
+        <div class="stat"><span class="num mono">100%</span><span class="lbl">Serviços com garantia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="processo">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Como funciona</span>
+          <h2>Do primeiro contato à luz acesa.</h2>
+        </div>
+      </div>
+      <div class="process-list">
+        <div class="process-item">
+          <span class="step-num mono">01</span>
+          <h3>Contato e visita</h3>
+          <p>Você descreve o problema ou o projeto; agendamos uma visita técnica para avaliação no local.</p>
+        </div>
+        <div class="process-item">
+          <span class="step-num mono">02</span>
+          <h3>Orçamento fechado</h3>
+          <p>Enviamos valor e prazo por escrito, com material e mão de obra detalhados, sem letras miúdas.</p>
+        </div>
+        <div class="process-item">
+          <span class="step-num mono">03</span>
+          <h3>Execução</h3>
+          <p>Equipe certificada executa o serviço seguindo a NBR 5410 e normas de segurança do trabalho.</p>
+        </div>
+        <div class="process-item">
+          <span class="step-num mono">04</span>
+          <h3>Entrega e garantia</h3>
+          <p>Testes finais, laudo técnico quando aplicável, e garantia por escrito sobre tudo que foi instalado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Precisa de um eletricista de confiança?</h2>
+          <span class="phone">(21) 99999-0000</span>
+        </div>
+        <a href="#contato" class="cta-btn">Falar agora no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contato" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Contato</span>
+          <h2>Peça seu orçamento sem compromisso.</h2>
+        </div>
+      </div>
+      <div style="border:1px solid var(--line); border-radius:6px; padding:40px; background:var(--bg-panel); max-width:620px;">
+        <p style="color:var(--muted); margin-bottom:8px;">E-mail</p>
+        <p style="margin-bottom:22px;">contato@hajaluz.com.br</p>
+        <p style="color:var(--muted); margin-bottom:8px;">Telefone / WhatsApp</p>
+        <p style="margin-bottom:22px;" class="mono">(21) 99999-0000</p>
+        <p style="color:var(--muted); margin-bottom:8px;">Atendimento</p>
+        <p>Segunda a sábado, 8h às 19h · Emergências 24h</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-logo">Haja Luz</div>
+      <div>Instalações e manutenções elétricas.</div>
+    </div>
+    <div>© 2026 Haja Luz. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+</body>
+</html>
